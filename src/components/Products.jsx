@@ -1,4 +1,3 @@
-/* eslint-disable */
 // Products.jsx - Using only API data
 import React, { useState, useEffect } from "react";
 import ProductCard from "./ProductCard";
@@ -46,6 +45,7 @@ const Products = () => {
       }
 
       return () => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         componentMounted = false;
       };
     };
@@ -186,4 +186,5 @@ const Products = () => {
 };
 
 export default Products;
+
 
